@@ -1,14 +1,14 @@
 import React from 'react'
-import Profileimage from './image/profile.png'
+
 const SingleComment = (props) => {
     console.log(props)
     return (
         <div className='comment'>
-        <a href='/' className='avatar'>
+        <a href='/' className="card-img-top" style={{width:"100%"}}>
             <img src={props.profile} alt="profile picture" />
         </a>
-        <div className='content'>
-            <a href='/' className='author'>
+        <div >
+            <a href='/' className="card-title">
                {props.name}
         </a>
             <div className='metadata'>
@@ -16,7 +16,7 @@ const SingleComment = (props) => {
                     {props.time}
             </span>
             </div>
-            <div className='text'>
+            <div className='card-text'>
                 {props.text} 
         </div>
         </div>
